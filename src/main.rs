@@ -36,10 +36,9 @@ fn part2(input: String) {
     println!("=======================");
     
     let now = Instant::now();
-    
-    
+
     // Implement
-    
+
     let elapsed = now.elapsed();
     println!("-----------------------");
     println!("Part 2 ran in: {:.2?}", elapsed);
