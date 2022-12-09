@@ -1,12 +1,9 @@
 use std::fs;
 use std::time::Instant;
 
-mod utils;
-
 fn main() {
-    let filename = 
-        //"./sample.txt"
-        "./input.txt";
+    let filename = "./sample.txt";
+    //"./input.txt";
 
     let input = fs::read_to_string(filename).expect("Could not read input");
     let input_part_2 = input.clone(); // Cloning input here so it doesn't affect benchmarks
@@ -16,7 +13,7 @@ fn main() {
     println!("=======================");
 
     let now = Instant::now();
-    
+
     part1(input);
 
     let elapsed = now.elapsed();
@@ -27,7 +24,7 @@ fn main() {
     println!("=======================");
     println!("Running Part 2");
     println!("=======================");
-    
+
     let now = Instant::now();
 
     part2(input_part_2);
